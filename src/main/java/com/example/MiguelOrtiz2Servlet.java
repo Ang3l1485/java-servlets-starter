@@ -9,8 +9,8 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet("/hola")
-public class HolaMundoServlet extends HttpServlet {
+@WebServlet("/MiguelOrtiz2")
+public class MiguelOrtiz2Servlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
@@ -20,7 +20,8 @@ public class HolaMundoServlet extends HttpServlet {
         PrintWriter out = resp.getWriter();
 
         out.print("<html><body>\n");
-        out.print("<h1>Hola Mundo desde un Servlet!</h1>\n");
+        out.print(
+                "<h1>¡Hola profe, mi nombre es Miguel Angel Ortiz, actualmente voy en quinto semestre y me gusta leer!</h1>\n");
         out.print("</body></html>\n");
         out.flush();
     }
